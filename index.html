@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Esport World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esport World</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0B0F19;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#111827;
+border-bottom:1px solid #1f2937;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#3B82F6;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#9CA3AF;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#3B82F6;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:#111827;
+width:280px;
+padding:25px;
+border-radius:15px;
+border:1px solid #1f2937;
+}
+
+.card h3{
+color:#3B82F6;
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#9CA3AF;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to Esport World</h1>
-    <p>BGMI & PUBG Mobile Esports Hub</p>
+
+<nav>
+<div class="logo">ESPORT WORLD</div>
+</nav>
+
+<section class="hero">
+<h1>BGMI & PUBG Mobile Esports</h1>
+<p>The Ultimate Hub for Rankings, Tournaments & PMGC Coverage</p>
+<a href="#" class="btn">Explore</a>
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>PMGC 2026</h3>
+<p>Follow all PMGC standings and match results.</p>
+</div>
+
+<div class="card">
+<h3>Top Teams</h3>
+<p>Track the best BGMI and PUBG Mobile teams.</p>
+</div>
+
+<div class="card">
+<h3>Player Rankings</h3>
+<p>Discover top fraggers and MVP players.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Esport World
+</footer>
+
 </body>
 </html>
