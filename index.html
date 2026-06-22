@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Esport World</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#0B0F19;
+background:linear-gradient(135deg,#050816,#0B0F19,#111827);
 color:white;
+min-height:100vh;
 }
+
+/* Navbar */
 
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
-background:#111827;
-border-bottom:1px solid #1f2937;
+padding:20px;
+background:rgba(17,24,39,0.9);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(59,130,246,.2);
 }
 
 .logo{
 font-size:28px;
 font-weight:bold;
 color:#3B82F6;
+text-shadow:0 0 15px #3B82F6;
 }
+
+/* Hero */
 
 .hero{
 text-align:center;
@@ -39,88 +48,167 @@ padding:100px 20px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
+font-size:55px;
+line-height:1.1;
+margin-bottom:20px;
+text-shadow:0 0 25px rgba(59,130,246,.4);
 }
 
 .hero p{
 font-size:20px;
 color:#9CA3AF;
-margin-bottom:30px;
+margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 25px;
-background:#3B82F6;
+padding:14px 30px;
+background:linear-gradient(45deg,#3B82F6,#06B6D4);
 color:white;
 text-decoration:none;
-border-radius:10px;
+border-radius:12px;
 font-weight:bold;
+box-shadow:0 0 20px rgba(59,130,246,.5);
 }
+
+/* Cards */
 
 .cards{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:20px;
-padding:40px;
+padding:40px 20px;
 }
 
 .card{
-background:#111827;
-width:280px;
+background:rgba(17,24,39,.8);
+backdrop-filter:blur(10px);
+width:300px;
 padding:25px;
-border-radius:15px;
-border:1px solid #1f2937;
+border-radius:18px;
+border:1px solid rgba(59,130,246,.25);
+box-shadow:0 0 20px rgba(59,130,246,.15);
 }
 
 .card h3{
 color:#3B82F6;
-margin-bottom:10px;
+margin-bottom:12px;
 }
+
+.card p{
+color:#cbd5e1;
+}
+
+/* Section Title */
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-top:50px;
+margin-bottom:20px;
+color:white;
+}
+
+/* Footer */
 
 footer{
 text-align:center;
-padding:30px;
+padding:40px 20px;
 color:#9CA3AF;
+margin-top:40px;
+border-top:1px solid rgba(59,130,246,.2);
 }
+
 </style>
 </head>
 
 <body>
 
 <nav>
-<div class="logo">ESPORT WORLD</div>
+
+<div class="logo">
+ESPORT WORLD
+</div>
+
 </nav>
 
 <section class="hero">
-<h1>BGMI & PUBG Mobile Esports</h1>
-<p>The Ultimate Hub for Rankings, Tournaments & PMGC Coverage</p>
-<a href="#" class="btn">Explore</a>
+
+<h1>
+BGMI & PUBG Mobile Esports
+</h1>
+
+<p>
+The Ultimate Hub For Rankings, Tournaments, News & PMGC Coverage
+</p>
+
+<a href="#" class="btn">
+Explore
+</a>
+
 </section>
+
+<h2 class="section-title">
+🔥 Featured
+</h2>
 
 <section class="cards">
 
 <div class="card">
-<h3>PMGC 2026</h3>
-<p>Follow all PMGC standings and match results.</p>
+<h3>🔴 PMGC 2026 LIVE</h3>
+<p>
+Follow live standings, match results and tournament updates.
+</p>
 </div>
 
 <div class="card">
-<h3>Top Teams</h3>
-<p>Track the best BGMI and PUBG Mobile teams.</p>
+<h3>🏆 Top Teams</h3>
+<p>
+Track the strongest BGMI and PUBG Mobile teams worldwide.
+</p>
 </div>
 
 <div class="card">
-<h3>Player Rankings</h3>
-<p>Discover top fraggers and MVP players.</p>
+<h3>🎯 Player Rankings</h3>
+<p>
+See top fraggers, MVP players and rising esports stars.
+</p>
+</div>
+
+</section>
+
+<h2 class="section-title">
+🌍 Coming Soon
+</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>📊 Live Standings</h3>
+<p>
+Real-time tournament points table and rankings.
+</p>
+</div>
+
+<div class="card">
+<h3>📰 Esports News</h3>
+<p>
+Latest BGMI and PUBG Mobile esports news updates.
+</p>
+</div>
+
+<div class="card">
+<h3>🎥 Highlights</h3>
+<p>
+Epic clutches, tournament moments and match highlights.
+</p>
 </div>
 
 </section>
 
 <footer>
-© 2026 Esport World
+© 2026 Esport World • Built For Esports Fans
 </footer>
 
 </body>
